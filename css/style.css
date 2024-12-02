@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  transition: 0.5s;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+:root {
+  --balack-primary:#1B1B1B;
+  --black-secundary:#242424;
+  --yellow-:#FCC26B;
+  --white:#FFF;
+  --black:#000;
+}
+body {
+  background-color: var(--white);
+  color: var(--balack-primary);
+}
+h1,h2,h3,h4 {
+  font-family: "Road Rage", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2024;
+  padding: 4.7rem 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  gap: 3.7rem;
+}
+nav a {
+  color: #514B4B;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 155.3%;
+  letter-spacing: 0.96px;
+}
+nav a:hover {
+  color: var(--black);
+}
+.icon-rigth {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
