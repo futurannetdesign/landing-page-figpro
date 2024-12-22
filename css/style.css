@@ -57,6 +57,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.btn-mobile {
+  display: none;
+}
 nav {
   display: flex;
   gap: 3.7rem;
@@ -689,5 +692,59 @@ footer {
     font-size: 1.2rem;
     line-height: 155.3%;
     letter-spacing: -1.05px;
+  }
+}
+
+/*Media query*/
+/*Media query header*/
+@media(max-width: 560px) {
+  header {
+    padding: 3rem 0;
+  }
+  .btn-mobile {
+    display: block;
+  }
+  .logo {
+    max-width: 158px;
+  }
+  nav {
+    display: none;
+  }
+}
+
+/*Media query footer*/
+@media(max-width: 991px) {
+  .first-area {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rigth {
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-right: 1.6rem
+        }
+      };
+    }
+  }
+}
+@media(max-width: 560px) {
+  .first-area {
+    .left {
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .second-area {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }
